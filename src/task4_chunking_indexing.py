@@ -40,6 +40,9 @@ EMBEDDING_MODEL = os.getenv(
 EMBEDDING_DIM = 384
 
 COLLECTION_NAME = "rag_documents"
+_HEADER_SEPARATOR = "\n---\n"
+_TITLE_PATTERN = re.compile(r"^#\s+(.+)$", re.MULTILINE)
+_URL_PATTERN = re.compile(r"\*\*Source:\*\*\s*(\S+)")
 
 _EMBEDDING_MODEL_INSTANCE: Any = None
 
@@ -74,7 +77,10 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
     if not texts:
         return []
     model = _get_embedding_model()
-    embeddings = model.encode(texts, convert_to_numpy=True, show_progress_bar=False)
+    embeddings = model.encode(
+        texts, convert_to_numpy=True, normalize_embeddings=True,
+        show_progress_bar=False,
+    )
     return embeddings.tolist()
 
 
@@ -101,7 +107,12 @@ def load_documents() -> list[dict]:
         if path.name.startswith("."):
             continue
 
-        content = path.read_text(encoding="utf-8").strip()
+        raw_text = path.read_text(encoding="utf-8").strip()
+        if _HEADER_SEPARATOR in raw_text:
+            header, content = raw_text.split(_HEADER_SEPARATOR, 1)
+            content = content.strip()
+        else:
+            header, content = raw_text, raw_text
         if not content:
             continue
 
@@ -109,16 +120,12 @@ def load_documents() -> list[dict]:
         doc_id = path.relative_to(STANDARDIZED_DIR).as_posix()
 
         # Trích xuất title từ markdown header # ... nếu có
-        lines = content.splitlines()
-        first_line = lines[0].strip() if lines else ""
-        if first_line.startswith("#"):
-            title = first_line.lstrip("#").strip()
-        else:
-            title = path.stem
+        title_match = _TITLE_PATTERN.search(header)
+        title = title_match.group(1).strip() if title_match else path.stem
 
         # Trích xuất URL từ **Source:** https://... nếu có
         url: str | None = None
-        match = re.search(r"\*\*Source:\*\*\s*(\S+)", content)
+        match = _URL_PATTERN.search(header)
         if match:
             candidate_url = match.group(1).strip()
             if candidate_url.startswith("http://") or candidate_url.startswith(
