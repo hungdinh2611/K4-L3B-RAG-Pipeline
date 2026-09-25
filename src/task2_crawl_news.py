@@ -1,45 +1,53 @@
 """
 Task 2 — Crawl bài viết/thông báo.
 
-Hướng dẫn:
-    1. Điền tối thiểu 5 URL công khai vào ARTICLE_URLS.
-    2. Crawl từng URL bằng Crawl4AI.
-    3. Lưu mỗi bài thành một JSON trong data/landing/news/.
-    4. Giữ đủ url, title, date_crawled và content_markdown.
+Chủ đề: Dịch vụ đại học (HUST) — học bổng, đăng ký học phần, ký túc xá, thư viện.
 
 Cài browser trước khi chạy:
     python -m playwright install chromium
-    
--> Dùng Firecrawl or bất cứ công cụ nào bạn quen    
 """
 
 import asyncio
 import json
+from datetime import datetime
 from pathlib import Path
+
+from crawl4ai import AsyncWebCrawler
 
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
 ARTICLE_URLS = [
-    # TODO: Thêm ít nhất 5 public URL.
+    # Học bổng khuyến khích học tập
+    "https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586",
+    # Đăng ký kế hoạch học tập / đăng ký học phần
+    "https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=45580",
+    # Kế hoạch đăng ký lớp học kỳ
+    "https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=43445",
+    # Ký túc xá - những điều tân sinh viên cần biết
+    "https://ts.hust.edu.vn/tin-tuc/nhung-dieu-tan-sinh-vien-k66-can-biet",
+    # Thư viện - câu hỏi thường gặp
+    "https://library.hust.edu.vn/vi/node/50",
 ]
 
 
 async def crawl_article(url: str) -> dict:
-    # TODO: Implement crawling logic.
-    #
-    # from datetime import datetime
-    # from crawl4ai import AsyncWebCrawler
-    #
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
+    """Crawl một URL và trả về dict đúng contract (url/title/date_crawled/content_markdown)."""
+    async with AsyncWebCrawler() as crawler:
+        result = await crawler.arun(url=url)
+
+        if not result.success:
+            raise RuntimeError(f"Crawl4AI failed for {url}: {result.error_message}")
+
+        title = (result.metadata or {}).get("title") or "Unknown"
+        content_markdown = result.markdown.raw_markdown if hasattr(result.markdown, "raw_markdown") else str(result.markdown)
+
+        return {
+            "url": url,
+            "title": title.strip(),
+            "date_crawled": datetime.now().isoformat(),
+            "content_markdown": content_markdown.strip(),
+        }
 
 
 async def crawl_all() -> None:

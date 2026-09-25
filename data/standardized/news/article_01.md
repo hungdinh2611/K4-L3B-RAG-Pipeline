@@ -1,0 +1,64 @@
+# CTT ĐHBKHN
+
+**Source:** https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586
+
+**Crawled:** 2026-09-25T10:17:21.804074
+
+---
+
+[![](https://ctt.hust.edu.vn/Images/logo.png)](https://ctt.hust.edu.vn/)
+![](https://ctt.hust.edu.vn/Images/mask.svg)
+[ Đăng nhập ](https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F)
+[ Dành cho phụ huynh ](https://ctt-sis.hust.edu.vn)
+  * [Trang chủ](https://ctt.hust.edu.vn/)
+  * [Thông báo](https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586)
+    * [Đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=%C4%90T%C4%90H)
+    * [Sau đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=%C4%90TS%C4%90H)
+    * [Vừa làm vừa học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=VLVH)
+  * [Quy định](https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586)
+    * [Đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=%C4%90T%C4%90H)
+    * [Sau đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=%C4%90TS%C4%90H)
+    * [Vừa làm vừa học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=VLVH)
+    * [Biểu mẫu](https://ctt.hust.edu.vn/DisplayWeb/DisplayMenu?menu=13)
+  * [Sổ tay](https://sv-ctt.hust.edu.vn/#/so-tay-sv)
+  * [Dịch vụ](https://ctt.hust.edu.vn/Services)
+  * [Tra cứu](https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx)
+  * [Liên hệ](https://ctt.hust.edu.vn/DisplayWeb/DisplayMenu?menu=2058)
+
+
+  * [Trang chủ](https://ctt.hust.edu.vn/)
+  * [Thông báo](https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586)
+    * [Đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=%C4%90T%C4%90H)
+    * [Sau đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=%C4%90TS%C4%90H)
+    * [Vừa làm vừa học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListBaiViet?tag=VLVH)
+  * [Kế hoạch](https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586)
+    * [Đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListKeHoach?tag=%C4%90T%C4%90H)
+    * [Sau đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListKeHoach?tag=%C4%90TS%C4%90H)
+    * [Vừa làm vừa học](https://ctt.hust.edu.vn/DisplayWeb/DisplayListKeHoach?tag=VLVH)
+  * [Quy định](https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=46586)
+    * [Đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=%C4%90T%C4%90H)
+    * [Sau đại học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=%C4%90TS%C4%90H)
+    * [Vừa làm vừa học](https://ctt.hust.edu.vn/DisplayWeb/DisplayQuyChe?tag=VLVH)
+  * [Dịch vụ](https://ctt.hust.edu.vn/Services)
+
+
+### KẾT QUẢ XÉT CẤP HỌC BỔNG KHUYẾN KHÍCH HỌC TẬP KỲ I NĂM HỌC 2025-2026
+Nhà trường trân trọng thông báo và chúc mừng **1.****309****sinh viên** có kết quả học tập và rèn luyện xuất sắc được học bổng khuyến khích học tập học kỳ I năm học 2025-2026.  
+  
+Học bổng được xét theo khóa ngành, trong đó có:
+  * 854 sinh viên đạt học bổng loại xuất sắc (loại A)
+  * 343 sinh viên đạt học bổng loại giỏi (loại B)
+  * 112 sinh viên đạt học bổng loại khá (loại C)
+
+
+Danh sách sinh viên được học bổng xem[ **TẠI ĐÂY**](https://ctt.hust.edu.vn/Upload/Nguy%E1%BB%85n%20Vi%E1%BB%87t%20Ti%E1%BA%BFn/files/Danh%20sach%20cap%20HBKKHT%202025_1%20Dang%20web.pdf)  
+
+Nhà trường sẽ làm thủ tục chuyển tiền học bổng qua tài khoản Ngân hàng, tài khoản Viettel money vào cuối tháng 11/2025. **_Những sinh viên CHƯA ĐĂNG KÝ TÀI KHOẢN, THAY ĐỔI TÀI KHOẢN để nhận học bổng hoặc sinh viên CÓ Ý KIẾN THẮC MẮC về việc xét cấp học bổng_** **_gửi câu hỏi tại đường link sau_**** _đến_** **_hết t_**** _hứ_**** _3_**** _ngày_** **_11_**** _/_****_11_**** _/2025_** [**TẠI ĐÂY**](https://forms.office.com/r/Nt5jfm71XD)  
+Sinh viên **KHÔNG GỬI THẮC MẮC QUA BẤT KỲ KÊNH NÀO KHÁC** (như email, yammer, hệ thống hỏi đáp trên iCTSV,…). Kết thúc thời gian tiếp nhận hỏi đáp/ thắc mắc, Ban Công tác sinh viên và Ban Đào tạo sẽ trả lời các câu hỏi/thắc mắc qua email của sinh viên.  
+_Chi tiết Quy định về việc xét cấp học bổng KKHT xem_[** _TẠI ĐÂY_**](https://sv-ctt.hust.edu.vn/#/so-tay-sv/61/hoc-bong)  
+
+**BAN CÔNG TÁC SINH VIÊN**
+  
+
+Bản quyền thuộc về Đại học Bách Khoa Hà Nội
+Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
