@@ -253,3 +253,26 @@ def test_generation_result_validator_accepts_safe_refusal():
             "retrieval_source": "none",
         }
     )
+
+
+def test_offline_training_regulation_overview_cites_substantive_clauses():
+    from src.task4_chunking_indexing import chunk_documents, load_documents
+    from src.task10_generation import _regulation_overview
+
+    document = next(
+        item for item in load_documents()
+        if item["metadata"]["source"] == "hust-quy-che-dao-tao-2025.md"
+    )
+    pool = [
+        {**chunk, "score": 0.9, "retrieval_method": "hybrid"}
+        for chunk in chunk_documents([document])
+    ]
+    answer, sources = _regulation_overview(
+        "quy chế đào tạo của đại học bk", document["metadata"]["source"], pool, 5
+    )
+
+    assert "chính quy" in answer
+    assert "nghiên cứu sinh" in answer
+    assert "Trích từ tài liệu" not in answer
+    validate_search_results(sources, top_k=5)
+    assert all(f"[{source['id']}]" in answer for source in sources[:2])

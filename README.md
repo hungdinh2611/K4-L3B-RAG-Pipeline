@@ -1,33 +1,35 @@
 # Day 8 — RAG Pipeline
 
-## Mục tiêu
+## Tổng quan
 
-Mỗi nhóm xây dựng một chatbot RAG trả lời câu hỏi từ bộ tài liệu do nhóm thu thập. Sản phẩm phải có hybrid retrieval, citation, giao diện chat và báo cáo đánh giá.
+Chatbot RAG tiếng Việt trả lời câu hỏi về quy chế đào tạo, học phí, học bổng và dịch vụ sinh viên. Pipeline hỗ trợ dense retrieval, BM25Plus, Reciprocal Rank Fusion (RRF), PageIndex fallback, citation và giao diện Streamlit.
 
-Nhóm tự chọn bài toán và thu thập dữ liệu phù hợp; repo không cung cấp dữ liệu mẫu.
+Hệ thống chạy được ở chế độ offline bằng embedding cục bộ và câu trả lời trích xuất có citation. Khi cấu hình API key, phần generation có thể dùng OpenAI, Gemini hoặc Anthropic.
 
-## Sản phẩm phải nộp
+## Trạng thái hoàn thành
 
-- Repository nhóm chạy được.
-- Tối thiểu 3 tài liệu chính sách và 5 bài viết/page do nhóm tự thu thập.
-- Pipeline: convert → chunk → index → dense + BM25 → RRF → fallback → generation có citation.
-- Chatbot Streamlit hiển thị câu trả lời và nguồn đã dùng.
-- Golden dataset tối thiểu 15 câu; đánh giá 4 metric và so sánh A/B.
-- `group_project/evaluation/RESULT.md`.
-- Mỗi thành viên nộp báo cáo cá nhân theo template trong `group_project/ịndividual/INDIVIDUAL_REPORT.md`.
+- 3 PDF chính sách và 5 bài viết web, đã chuẩn hóa thành Markdown.
+- 8 tài liệu, 442 chunk được đồng bộ trong ChromaDB bằng ID ổn định.
+- Dense + BM25Plus → RRF; fallback PageIndex dùng cosine score gốc.
+- Generation có kiểm tra citation và safe refusal cho câu hỏi ngoài miền/lỗi provider.
+- Streamlit hiển thị câu trả lời, nguồn, retrieval method và score.
+- Golden dataset 17 câu, 4 proxy metric và so sánh A/B có thể chạy lại.
+- Toàn bộ 24 contract/acceptance/robustness test đang pass.
 
 ## Quick start
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip setuptools wheel
 python -m pip install -e ".[dev]"
 python -m playwright install chromium
-cp .env.example .env
+# macOS/Linux: cp .env.example .env
+# Windows PowerShell: Copy-Item .env.example .env
 ```
 
-Điền API key cần dùng trong `.env`; không commit file này.
+API key LLM là tùy chọn. Nếu không có key, ứng dụng dùng generator trích xuất cục bộ. Không commit `.env`.
 
 ```bash
 # 1. Thu thập và chuẩn hoá
@@ -41,33 +43,35 @@ pytest -q
 
 # 3. Chạy sản phẩm
 streamlit run app.py
+
+# 4. Chạy lại đánh giá A/B
+python -m group_project.evaluation.evaluate
 ```
 
-## Lộ trình 3 giờ
+## Kiến trúc
 
-| Mốc                  | Thời gian | Kết quả cần có                           |
-| -------------------- | --------: | ---------------------------------------- |
-| 0. Setup             |   10 phút | Môi trường và `.env` sẵn sàng            |
-| 1. Data              |   25 phút | ≥3 legal, ≥5 news, Markdown đã chuẩn hoá |
-| 2. Index & search    |   30 phút | ChromaDB, dense search và BM25 chạy được |
-| 3. Fusion & fallback |   25 phút | RRF và fallback tuân thủ contract        |
-| 4. Generation & UI   |   30 phút | Chatbot trả lời có citation              |
-| 5. Evaluation        |   30 phút | 15+ Q&A, 4 metric, A/B comparison        |
-| 6. Demo & handoff    |   30 phút | Test, report, demo và push repository    |
+```text
+PDF/DOCX + web JSON → Markdown → chunk → embedding → ChromaDB
+                                           ├─ dense search ─┐
+                                           └─ BM25Plus ─────┴─ RRF
+                                                             ├─ đủ tin cậy → generation + citation
+                                                             └─ điểm dense thấp → PageIndex fallback
+```
 
 ## Lưu ý quy tắc để có code quality tốt:
 
-- Dense và BM25 nên cùng trả về `SearchResult` theo một schema.
-- RRF chỉ nên dùng để gộp thứ hạng và chỉ chạy một lần.
-- Fallback dùng cosine score gốc của dense retrieval.
-- Threshold phải được hiệu chỉnh trên query in domain và out of domain, không có một con số đúng cho mọi corpus.
+- Dense và BM25 cùng trả về `SearchResult` theo một schema.
+- RRF chỉ gộp thứ hạng một lần; fallback dùng cosine score gốc của dense retrieval.
+- Index xóa ID cũ trước khi upsert, nên chạy lại không để lại chunk lỗi thời.
+- Mặc định `SCORE_THRESHOLD=0.3`; cần hiệu chỉnh thêm nếu thay corpus/model.
 
 ## Tài liệu
 
 - [Module contracts](docs/MODULE_CONTRACTS.md): schema, interface và invariant mà code/test nên tuân theo.
 - [Step-by-step guide](docs/STEP_BY_STEP.md): thứ tự triển khai và tiêu chí hoàn thành từng bước.
 - [Grading rubric](docs/GRADING_RUBRIC.md): Rubric thang điểm.
-- [Individual report](group_project/ịndividual/INDIVIDUAL_REPORT.md): template báo cáo cá nhân.
+- [Evaluation result](group_project/evaluation/RESULT.md): kết quả và phân tích A/B.
+- [Individual report](reports/INDIVIDUAL_REPORT.md): template báo cáo cá nhân.
 - [Suggested topics](docs/SUGGESTED_TOPICS.md): danh sách chủ đề tham khảo, không bắt buộc.
 
 ## Kiểm tra

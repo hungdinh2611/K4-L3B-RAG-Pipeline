@@ -1,3 +1,5 @@
+import math
+import re
 from typing import Literal, TypedDict
 
 
@@ -61,6 +63,8 @@ def validate_document(item: object, *, require_chunk: bool = False) -> None:
     for key in ("source", "title", "doc_type"):
         if not isinstance(metadata.get(key), str) or not metadata[key].strip():
             raise ValueError(f"metadata.{key} must be a non-empty string")
+    if metadata["doc_type"] not in {"legal", "news"}:
+        raise ValueError("metadata.doc_type must be legal or news")
     if "url" not in metadata or not (
         metadata["url"] is None or isinstance(metadata["url"], str)
     ):
@@ -92,6 +96,8 @@ def validate_search_results(
         score = item.get("score")
         if not isinstance(score, (int, float)) or isinstance(score, bool):
             raise ValueError("result.score must be numeric")
+        if not math.isfinite(float(score)):
+            raise ValueError("result.score must be finite")
         method = item.get("retrieval_method")
         if method not in valid_methods:
             raise ValueError("result.retrieval_method is invalid")
@@ -112,6 +118,21 @@ def validate_generation_result(result: object) -> None:
         raise ValueError("generation result must be a dict")
     if not isinstance(result.get("answer"), str) or not result["answer"].strip():
         raise ValueError("generation answer must be a non-empty string")
-    validate_search_results(result.get("sources"))
-    if result.get("retrieval_source") not in {"hybrid", "pageindex", "none"}:
+    sources = result.get("sources")
+    validate_search_results(sources)
+    retrieval_source = result.get("retrieval_source")
+    if retrieval_source not in {"hybrid", "pageindex", "none"}:
         raise ValueError("generation retrieval_source is invalid")
+    if retrieval_source == "none":
+        if sources:
+            raise ValueError("retrieval_source=none cannot contain sources")
+        return
+    if not sources:
+        raise ValueError("a grounded generation must contain sources")
+
+    source_ids = {item["id"] for item in sources}
+    citations = set(re.findall(r"\[([^\[\]]+)\]", result["answer"]))
+    if not citations:
+        raise ValueError("a grounded generation must contain citations")
+    if not citations <= source_ids:
+        raise ValueError("every citation must map to an item in sources")

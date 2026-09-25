@@ -13,10 +13,18 @@ def semantic_search(query: str, top_k: int = 10) -> list[dict]:
     if top_k <= 0 or not query.strip():
         return []
 
+    collection = get_collection()
+    try:
+        collection_size = int(collection.count())
+    except (AttributeError, TypeError, ValueError):
+        collection_size = top_k
+    if collection_size <= 0:
+        return []
+
     query_vector = embed_texts([query])[0]
-    response = get_collection().query(
+    response = collection.query(
         query_embeddings=[query_vector],
-        n_results=top_k,
+        n_results=min(top_k, collection_size),
         include=["documents", "metadatas", "distances"],
     )
     results = []

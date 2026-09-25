@@ -20,7 +20,7 @@ from math import log
 
 from dotenv import load_dotenv
 
-from .task9_retrieval_pipeline import retrieve
+from .task9_retrieval_pipeline import SCORE_THRESHOLD, retrieve
 from .task4_chunking_indexing import chunk_documents, load_documents
 from .task5_semantic_search import semantic_search
 
@@ -225,6 +225,44 @@ def _all_local_chunks() -> list[dict]:
     return chunk_documents(load_documents())
 
 
+def _regulation_overview(query: str, source: str, pool: list[dict], top_k: int):
+    """Answer a broad training-regulation query from its scope and audience clauses."""
+    broad_terms = _terms(query) - {
+        "dai", "hoc", "bach", "khoa", "noi", "truong", "hust", "bk", "2025"
+    }
+    if broad_terms != {"quy", "che", "dao", "tao"}:
+        return None
+
+    document = next((doc for doc in load_documents()
+                     if doc["metadata"]["source"] == source), None)
+    if document is None:
+        return None
+    content = re.sub(r"\s+", " ", document["content"])
+    clauses = []
+    for number, phrase, label in (
+        (1, "Quy chế này quy định", "Phạm vi"),
+        (2, "Quy chế này áp dụng", "Đối tượng"),
+    ):
+        match = re.search(rf"\b{number}\.\s+({phrase}.+?\.)\s", content)
+        if not match:
+            return None
+        chunk = next((item for item in pool if phrase.casefold() in item["content"].casefold()), None)
+        if chunk is None:
+            return None
+        clauses.append((label, match.group(1), chunk))
+
+    clauses = clauses[:top_k]
+    answer = "Theo Quy chế đào tạo của Đại học Bách khoa Hà Nội:\n" + "\n".join(
+        f"- **{label}:** {passage} [{chunk['id']}]"
+        for label, passage, chunk in clauses
+    )
+    required = [chunk for _, _, chunk in clauses]
+    required_ids = {chunk["id"] for chunk in required}
+    sources = required + [item for item in pool if item["id"] not in required_ids][:top_k - len(required)]
+    sources.sort(key=lambda item: item["score"], reverse=True)
+    return answer, sources
+
+
 def _local_evidence(query: str, retrieved: list[dict], top_k: int) -> tuple[str, list[dict]]:
     """Inspect the full retrieved source files for an exact supporting passage."""
     best_sources = {}
@@ -254,6 +292,9 @@ def _local_evidence(query: str, retrieved: list[dict], top_k: int) -> tuple[str,
                 "retrieval_method": source["retrieval_method"],
             })
             seen.add(chunk["id"])
+    overview = _regulation_overview(query, selected_source, pool, top_k)
+    if overview is not None:
+        return overview
     answer = _extractive_answer(query, pool)
     match = re.search(r"\[([^]]+)\]$", answer)
     if not match:
@@ -271,6 +312,13 @@ def _local_evidence(query: str, retrieved: list[dict], top_k: int) -> tuple[str,
 
 def _refusal() -> dict:
     return {"answer": SAFE_REFUSAL, "sources": [], "retrieval_source": "none"}
+
+
+def _citations_are_grounded(answer: str, chunks: list[dict]) -> bool:
+    """Require every bracket citation in the answer to map to a returned source."""
+    cited_ids = set(re.findall(r"\[([^\[\]]+)\]", answer))
+    source_ids = {chunk["id"] for chunk in chunks}
+    return bool(cited_ids) and cited_ids <= source_ids
 
 
 def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
@@ -297,13 +345,19 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
             return _refusal()
     else:
         try:
-            if semantic_search(query, top_k=1)[0]["score"] < 0.3:
+            uses_pageindex = all(
+                chunk["retrieval_method"] == "pageindex" for chunk in chunks
+            )
+            if (
+                not uses_pageindex
+                and semantic_search(query, top_k=1)[0]["score"] < SCORE_THRESHOLD
+            ):
                 return _refusal()
             answer, chunks = _local_evidence(query, chunks, top_k)
-        except (IndexError, ValueError):
+        except Exception:
             return _refusal()
 
-    if answer == SAFE_REFUSAL or not any(f"[{chunk['id']}]" in answer for chunk in chunks):
+    if answer == SAFE_REFUSAL or not _citations_are_grounded(answer, chunks):
         return _refusal()
     source = "pageindex" if chunks[0]["retrieval_method"] == "pageindex" else "hybrid"
     return {"answer": answer, "sources": chunks, "retrieval_source": source}

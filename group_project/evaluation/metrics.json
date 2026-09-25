@@ -3,18 +3,18 @@
   "top_k": 5,
   "summary": {
     "dense_only": {
-      "faithfulness": 1.0,
-      "answer_relevance": 0.7582,
-      "context_recall": 0.9105,
-      "context_precision": 0.4941,
-      "mean_latency_seconds": 0.104
+      "faithfulness": 0.9412,
+      "answer_relevance": 0.7274,
+      "context_recall": 0.8742,
+      "context_precision": 0.4824,
+      "mean_latency_seconds": 0.118
     },
     "hybrid_rrf": {
       "faithfulness": 1.0,
-      "answer_relevance": 0.8816,
+      "answer_relevance": 0.9012,
       "context_recall": 1.0,
       "context_precision": 0.5882,
-      "mean_latency_seconds": 0.095
+      "mean_latency_seconds": 0.063
     }
   },
   "cases": {
@@ -22,15 +22,15 @@
       {
         "question": "Học phí năm học 2025-2026 được tính theo gì?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “Học phí được tính theo số tín chỉ học phí (TCHP) của các học phần được sinh viên đăng” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-5]",
+        "answer": "Trích từ tài liệu: “Học phí được tính theo số tín chỉ học phí (TCHP) của các học phần được sinh viên đăng” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4]",
         "source_ids": [
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-3",
           "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-5",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-184",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-185",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-186",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-188"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-187"
         ],
-        "latency_seconds": 0.641,
+        "latency_seconds": 0.688,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.8,
@@ -41,15 +41,15 @@
       {
         "question": "Học phí học kỳ hè được tính bằng bao nhiêu lần mức thông thường?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “- Mức học phí học kỳ hè được tính bằng 1,5 lần mức học phí quy định tại mục 1, 2, 3” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16]",
+        "answer": "Trích từ tài liệu: “- Mức học phí học kỳ hè được tính bằng 1,5 lần mức học phí quy định tại mục 1, 2, 3” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-63",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-62",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-22",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14"
         ],
-        "latency_seconds": 0.047,
+        "latency_seconds": 0.055,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.6667,
@@ -60,15 +60,15 @@
       {
         "question": "Chương trình TROY-BA và TROY-IT khóa 70 có học phí bao nhiêu mỗi học kỳ?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “Mức học phí đối với chương trình TROY-BA và TROY-IT là 30 triệu đồng/một học kỳ với\nkhoá 70, 28.6 triệu đồng/một học kỳ đối với khoá 69 và 26 triệu đồng/một học kỳ đối với khoá 68” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15]",
+        "answer": "Trích từ tài liệu: “Mức học phí đối với chương trình TROY-BA và TROY-IT là 30 triệu đồng/một học kỳ với\nkhoá 70, 28.6 triệu đồng/một học kỳ đối với khoá 69 và 26 triệu đồng/một học kỳ đối với khoá 68” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14]",
         "source_ids": [
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-22",
           "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-63",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-8"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-62",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-7"
         ],
-        "latency_seconds": 0.047,
+        "latency_seconds": 0.053,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.8571,
@@ -79,15 +79,15 @@
       {
         "question": "Quỹ học bổng khuyến khích học tập của Trường Đại học Luật TP.HCM được trích bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “Quỹ học bổng khuyến khích học tập được trích lập bằng 8% nguồn thu học phí của khóa,” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3]",
+        "answer": "Trích từ tài liệu: “Quỹ học bổng khuyến khích học tập được trích lập bằng 8% nguồn thu học phí của khóa,” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2]",
         "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "news/article_01.md::chunk-9"
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
+          "news/article_01.md::chunk-8"
         ],
-        "latency_seconds": 0.046,
+        "latency_seconds": 0.049,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -98,15 +98,15 @@
       {
         "question": "Học bổng loại xuất sắc của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại xuất sắc: bằng 150% học phí chương trình đào tạo, áp dụng cho sinh” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại xuất sắc: bằng 150% học phí chương trình đào tạo, áp dụng cho sinh” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-6]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-6",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7"
         ],
-        "latency_seconds": 0.049,
+        "latency_seconds": 0.046,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -117,15 +117,15 @@
       {
         "question": "Học bổng loại giỏi của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại giỏi: bằng 100% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại giỏi: bằng 100% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
-          "news/article_01.md::chunk-9"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
+          "news/article_01.md::chunk-8"
         ],
-        "latency_seconds": 0.073,
+        "latency_seconds": 0.045,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -136,15 +136,15 @@
       {
         "question": "Học bổng loại khá của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại khá: bằng 50% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại khá: bằng 50% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
         "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
-          "news/article_01.md::chunk-9"
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
+          "news/article_01.md::chunk-8"
         ],
-        "latency_seconds": 0.04,
+        "latency_seconds": 0.047,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -155,15 +155,15 @@
       {
         "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 8 tín chỉ trong học kỳ bị cảnh báo thế nào?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “a) Nâng một mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học\nkỳ lớn hơn 8.” [legal/hust-quy-che-dao-tao-2025.md::chunk-105]",
+        "answer": "Trích từ tài liệu: “a) Nâng một mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học\nkỳ lớn hơn 8.” [legal/hust-quy-che-dao-tao-2025.md::chunk-104]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-91",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-117",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-106"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-90",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-116",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-105"
         ],
-        "latency_seconds": 0.111,
+        "latency_seconds": 0.109,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -174,15 +174,15 @@
       {
         "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 16 tín chỉ trong học kỳ bị cảnh báo thế nào?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “b) Nâng hai mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học kỳ\nlớn hơn 16 hoặc tự ý bỏ học, không đăng ký học tập.” [legal/hust-quy-che-dao-tao-2025.md::chunk-105]",
+        "answer": "Trích từ tài liệu: “b) Nâng hai mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học kỳ\nlớn hơn 16 hoặc tự ý bỏ học, không đăng ký học tập.” [legal/hust-quy-che-dao-tao-2025.md::chunk-104]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-91",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-117",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-106"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-90",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-116",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-105"
         ],
-        "latency_seconds": 0.105,
+        "latency_seconds": 0.118,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -193,15 +193,15 @@
       {
         "question": "Học kỳ hè có xét cảnh báo học tập ở Bách khoa Hà Nội không?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “ký tối đa 8 TC trong học kỳ hè.\nb) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo” [legal/hust-quy-che-dao-tao-2025.md::chunk-67]",
+        "answer": "Trích từ tài liệu: “ký tối đa 8 TC trong học kỳ hè.\nb) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo” [legal/hust-quy-che-dao-tao-2025.md::chunk-66]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-67",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-122",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-131"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-66",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-121",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-130"
         ],
-        "latency_seconds": 0.111,
+        "latency_seconds": 0.112,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.7143,
@@ -212,15 +212,15 @@
       {
         "question": "Sinh viên K70 có cần đăng ký học phần học kỳ 2 năm 2025-2026 không?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “* **Mức cảnh báo:** mức cảnh báo được hệ thống phần mềm tự thiết lập căn cứ theo kết quả học tập, số tín chỉ không đạt trong học kỳ và không đạt tích lũy. Có 3 mức cảnh báo là Mức 1 (M1), Mức 2 (M2) và Mức 3 (M3). Sinh viên bị cảnh báo Mức 3 sẽ không được tiếp tục học tập tại trường. Mức cảnh báo M0 là bình thường.” [news/article_04.md::chunk-62]",
+        "answer": "Trích từ tài liệu: “* **Mức cảnh báo:** mức cảnh báo được hệ thống phần mềm tự thiết lập căn cứ theo kết quả học tập, số tín chỉ không đạt trong học kỳ và không đạt tích lũy. Có 3 mức cảnh báo là Mức 1 (M1), Mức 2 (M2) và Mức 3 (M3). Sinh viên bị cảnh báo Mức 3 sẽ không được tiếp tục học tập tại trường. Mức cảnh báo M0 là bình thường.” [news/article_04.md::chunk-61]",
         "source_ids": [
-          "news/article_02.md::chunk-10",
-          "news/article_03.md::chunk-8",
-          "news/article_04.md::chunk-32",
-          "news/article_04.md::chunk-62",
-          "news/article_02.md::chunk-9"
+          "news/article_02.md::chunk-9",
+          "news/article_03.md::chunk-7",
+          "news/article_04.md::chunk-31",
+          "news/article_04.md::chunk-61",
+          "news/article_02.md::chunk-8"
         ],
-        "latency_seconds": 0.053,
+        "latency_seconds": 0.062,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.4615,
@@ -231,15 +231,15 @@
       {
         "question": "Thời gian đăng ký học phần kỳ 2025.2 là khi nào?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “nhân. Thời gian tổ chức đăng ký học phần cho một học kỳ diễn ra vào những tuần đầu của” [legal/hust-quy-che-dao-tao-2025.md::chunk-65]",
+        "answer": "Trích từ tài liệu: “nhân. Thời gian tổ chức đăng ký học phần cho một học kỳ diễn ra vào những tuần đầu của” [legal/hust-quy-che-dao-tao-2025.md::chunk-64]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-185",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-65",
-          "news/article_02.md::chunk-8",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-184",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-186"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-64",
+          "news/article_02.md::chunk-7",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-183",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-185"
         ],
-        "latency_seconds": 0.193,
+        "latency_seconds": 0.226,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.2,
@@ -250,53 +250,47 @@
       {
         "question": "Kỳ 2025.2 được đăng ký tối đa bao nhiêu tín chỉ ở hệ chuẩn và Elitech?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “|  **Đăng ký lớp chương trình Elitech**  |  **Đăng ký lớp các chương trình chuẩn**  |  **Đăng ký****chương trình kỹ sư chuyên sâu 180TC**  |  **Đăng ký****điều chỉnh chương trình Elitech**  |  **Đăng ký****điều chỉnh các****chương****trình****chuẩn**  |  **Đăng ký****thêm tất cả các****chương trình**  |” [news/article_03.md::chunk-17]",
+        "answer": "Trích từ tài liệu: “|  **Đăng ký lớp chương trình Elitech**  |  **Đăng ký lớp các chương trình chuẩn**  |  **Đăng ký****chương trình kỹ sư chuyên sâu 180TC**  |  **Đăng ký****điều chỉnh chương trình Elitech**  |  **Đăng ký****điều chỉnh các****chương****trình****chuẩn**  |  **Đăng ký****thêm tất cả các****chương trình**  |” [news/article_03.md::chunk-16]",
         "source_ids": [
+          "news/article_03.md::chunk-15",
           "news/article_03.md::chunk-16",
-          "news/article_03.md::chunk-17",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-188",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-186",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-187",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-185",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-3"
         ],
-        "latency_seconds": 0.038,
+        "latency_seconds": 0.047,
         "scores": {
           "faithfulness": 1.0,
-          "answer_relevance": 0.3333,
-          "context_recall": 0.3333,
+          "answer_relevance": 0.6667,
+          "context_recall": 0.625,
           "context_precision": 0.0
         }
       },
       {
         "question": "Học kỳ I năm 2025-2026 có bao nhiêu sinh viên Bách khoa Hà Nội được học bổng khuyến khích học tập?",
         "expected_source": "article_01.md",
-        "answer": "Trích từ tài liệu: “Quỹ học bổng khuyến khích học tập được trích lập bằng 8% nguồn thu học phí của khóa,” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3]",
-        "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "news/article_01.md::chunk-8",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-133",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-128"
-        ],
-        "latency_seconds": 0.049,
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "source_ids": [],
+        "latency_seconds": 0.056,
         "scores": {
-          "faithfulness": 1.0,
-          "answer_relevance": 0.625,
-          "context_recall": 1.0,
-          "context_precision": 0.2
+          "faithfulness": 0.0,
+          "answer_relevance": 0.0,
+          "context_recall": 0.0,
+          "context_precision": 0.0
         }
       },
       {
         "question": "Sinh viên chính quy dùng thẻ gì để sử dụng thư viện Bách khoa Hà Nội?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “* Đối với sinh viên chính qui : Thẻ sinh viên được sử dụng là thẻ Trung tâm TTTTS” [news/article_05.md::chunk-7]",
+        "answer": "Trích từ tài liệu: “* Đối với sinh viên chính qui : Thẻ sinh viên được sử dụng là thẻ Trung tâm TTTTS” [news/article_05.md::chunk-6]",
         "source_ids": [
-          "news/article_05.md::chunk-8",
           "news/article_05.md::chunk-7",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-0",
-          "news/article_04.md::chunk-57",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3"
+          "news/article_05.md::chunk-6",
+          "news/article_04.md::chunk-56",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "news/article_04.md::chunk-16"
         ],
-        "latency_seconds": 0.046,
+        "latency_seconds": 0.054,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -307,34 +301,34 @@
       {
         "question": "Nếu mất thẻ thư viện Bách khoa Hà Nội, sinh viên cần làm gì?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “Sinh viên sẽ đăng nhập bằng địa chỉ email được trường ĐHBK Hà Nội cấp và mật khẩu tương ứng. Quí vị phụ huynh sẽ đăng nhập bằng mã số sinh viên và mật khẩu là số chứng minh thư hoặc số thẻ căn cước của sinh viên.” [news/article_04.md::chunk-53]",
+        "answer": "Trích từ tài liệu: “lĩnh vực cần bảo mật thực hiện theo quy định của Nhà nước.” [legal/hust-quy-che-dao-tao-2025.md::chunk-138]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-122",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-96",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-61",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-59",
-          "news/article_04.md::chunk-53"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-121",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-138",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-95",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-0",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-60"
         ],
-        "latency_seconds": 0.064,
+        "latency_seconds": 0.183,
         "scores": {
           "faithfulness": 1.0,
-          "answer_relevance": 0.2308,
-          "context_recall": 0.5455,
+          "answer_relevance": 0.0,
+          "context_recall": 0.6364,
           "context_precision": 0.0
         }
       },
       {
         "question": "Phòng nào của thư viện Bách khoa Hà Nội cho mượn sách giáo trình?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “- Phòng 111: Phòng mượn sách giáo trình, cho mượn các tài liệu là sách giáo trình.” [news/article_05.md::chunk-15]",
+        "answer": "Trích từ tài liệu: “- Phòng 111: Phòng mượn sách giáo trình, cho mượn các tài liệu là sách giáo trình.” [news/article_05.md::chunk-14]",
         "source_ids": [
-          "news/article_05.md::chunk-25",
-          "news/article_03.md::chunk-36",
-          "news/article_05.md::chunk-35",
-          "news/article_05.md::chunk-15",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-5"
+          "news/article_05.md::chunk-24",
+          "news/article_03.md::chunk-35",
+          "news/article_05.md::chunk-34",
+          "news/article_05.md::chunk-14",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-4"
         ],
-        "latency_seconds": 0.06,
+        "latency_seconds": 0.049,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -347,15 +341,15 @@
       {
         "question": "Học phí năm học 2025-2026 được tính theo gì?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “Học phí được tính theo số tín chỉ học phí (TCHP) của các học phần được sinh viên đăng” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-5]",
+        "answer": "Trích từ tài liệu: “Học phí được tính theo số tín chỉ học phí (TCHP) của các học phần được sinh viên đăng” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4]",
         "source_ids": [
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-3",
           "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-5",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-7",
-          "news/article_02.md::chunk-8",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-187"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-6",
+          "news/article_02.md::chunk-7",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-186"
         ],
-        "latency_seconds": 0.114,
+        "latency_seconds": 0.08,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.8,
@@ -366,15 +360,15 @@
       {
         "question": "Học phí học kỳ hè được tính bằng bao nhiêu lần mức thông thường?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “- Mức học phí học kỳ hè được tính bằng 1,5 lần mức học phí quy định tại mục 1, 2, 3” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16]",
+        "answer": "Trích từ tài liệu: “- Mức học phí học kỳ hè được tính bằng 1,5 lần mức học phí quy định tại mục 1, 2, 3” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-63",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
           "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-62",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-22"
         ],
-        "latency_seconds": 0.101,
+        "latency_seconds": 0.049,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.6667,
@@ -385,15 +379,15 @@
       {
         "question": "Chương trình TROY-BA và TROY-IT khóa 70 có học phí bao nhiêu mỗi học kỳ?",
         "expected_source": "hust-quyet-dinh-hoc-phi-2025-2026.md",
-        "answer": "Trích từ tài liệu: “Mức học phí đối với chương trình TROY-BA và TROY-IT là 30 triệu đồng/một học kỳ với\nkhoá 70, 28.6 triệu đồng/một học kỳ đối với khoá 69 và 26 triệu đồng/một học kỳ đối với khoá 68” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15]",
+        "answer": "Trích từ tài liệu: “Mức học phí đối với chương trình TROY-BA và TROY-IT là 30 triệu đồng/một học kỳ với\nkhoá 70, 28.6 triệu đồng/một học kỳ đối với khoá 69 và 26 triệu đồng/một học kỳ đối với khoá 68” [legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-63",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-23",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-5"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-14",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-62",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-24",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-22",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-4"
         ],
-        "latency_seconds": 0.09,
+        "latency_seconds": 0.057,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.8571,
@@ -404,34 +398,34 @@
       {
         "question": "Quỹ học bổng khuyến khích học tập của Trường Đại học Luật TP.HCM được trích bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “Quỹ học bổng khuyến khích học tập được trích lập bằng 8% nguồn thu học phí của khóa,” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3]",
+        "answer": "Trích từ tài liệu: “Quỹ học bổng khuyến khích học tập được trích lập bằng 8% nguồn thu học phí của khóa,” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2]",
         "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-9",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-4",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-63"
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-0",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3"
         ],
-        "latency_seconds": 0.087,
+        "latency_seconds": 0.051,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
           "context_recall": 1.0,
-          "context_precision": 0.6
+          "context_precision": 0.8
         }
       },
       {
         "question": "Học bổng loại xuất sắc của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại xuất sắc: bằng 150% học phí chương trình đào tạo, áp dụng cho sinh” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại xuất sắc: bằng 150% học phí chương trình đào tạo, áp dụng cho sinh” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-6]",
         "source_ids": [
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7"
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-6",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15"
         ],
-        "latency_seconds": 0.078,
+        "latency_seconds": 0.053,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -442,34 +436,34 @@
       {
         "question": "Học bổng loại giỏi của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại giỏi: bằng 100% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại giỏi: bằng 100% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
         "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7"
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16"
         ],
-        "latency_seconds": 0.112,
+        "latency_seconds": 0.052,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
           "context_recall": 1.0,
-          "context_precision": 0.6
+          "context_precision": 0.4
         }
       },
       {
         "question": "Học bổng loại khá của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
         "expected_source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md",
-        "answer": "Trích từ tài liệu: “- Mức học bổng loại khá: bằng 50% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8]",
+        "answer": "Trích từ tài liệu: “- Mức học bổng loại khá: bằng 50% học phí chương trình đào tạo, áp dụng cho sinh viên” [legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7]",
         "source_ids": [
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-16",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7"
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-7",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-25",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-0",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-15"
         ],
-        "latency_seconds": 0.086,
+        "latency_seconds": 0.048,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -480,15 +474,15 @@
       {
         "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 8 tín chỉ trong học kỳ bị cảnh báo thế nào?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “a) Nâng một mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học\nkỳ lớn hơn 8.” [legal/hust-quy-che-dao-tao-2025.md::chunk-105]",
+        "answer": "Trích từ tài liệu: “a) Nâng một mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học\nkỳ lớn hơn 8.” [legal/hust-quy-che-dao-tao-2025.md::chunk-104]",
         "source_ids": [
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "news/article_04.md::chunk-62",
-          "news/article_04.md::chunk-60"
+          "news/article_04.md::chunk-61",
+          "news/article_04.md::chunk-59"
         ],
-        "latency_seconds": 0.139,
+        "latency_seconds": 0.116,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -499,15 +493,15 @@
       {
         "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 16 tín chỉ trong học kỳ bị cảnh báo thế nào?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “b) Nâng hai mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học kỳ\nlớn hơn 16 hoặc tự ý bỏ học, không đăng ký học tập.” [legal/hust-quy-che-dao-tao-2025.md::chunk-105]",
+        "answer": "Trích từ tài liệu: “b) Nâng hai mức cảnh báo học tập đối với sinh viên có số TC không đạt trong học kỳ\nlớn hơn 16 hoặc tự ý bỏ học, không đăng ký học tập.” [legal/hust-quy-che-dao-tao-2025.md::chunk-104]",
         "source_ids": [
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "news/article_04.md::chunk-60",
-          "news/article_04.md::chunk-62"
+          "news/article_04.md::chunk-59",
+          "news/article_04.md::chunk-61"
         ],
-        "latency_seconds": 0.151,
+        "latency_seconds": 0.105,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -518,15 +512,15 @@
       {
         "question": "Học kỳ hè có xét cảnh báo học tập ở Bách khoa Hà Nội không?",
         "expected_source": "hust-quy-che-dao-tao-2025.md",
-        "answer": "Trích từ tài liệu: “ký tối đa 8 TC trong học kỳ hè.\nb) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo” [legal/hust-quy-che-dao-tao-2025.md::chunk-67]",
+        "answer": "Trích từ tài liệu: “ký tối đa 8 TC trong học kỳ hè.\nb) Sinh viên đang bị cảnh báo học tập bị giới hạn khối lượng đăng ký học tập theo” [legal/hust-quy-che-dao-tao-2025.md::chunk-66]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-107",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-67",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
           "legal/hust-quy-che-dao-tao-2025.md::chunk-106",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-37"
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-66",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-104",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-105",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-36"
         ],
-        "latency_seconds": 0.142,
+        "latency_seconds": 0.113,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.7143,
@@ -537,15 +531,15 @@
       {
         "question": "Sinh viên K70 có cần đăng ký học phần học kỳ 2 năm 2025-2026 không?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “Riêng K70 không cần đăng ký học phần, nhà trường sẽ mở theo CT Chuẩn theo CTĐT.” [news/article_02.md::chunk-10]",
+        "answer": "Trích từ tài liệu: “Riêng K70 không cần đăng ký học phần, nhà trường sẽ mở theo CT Chuẩn theo CTĐT.” [news/article_02.md::chunk-9]",
         "source_ids": [
-          "news/article_02.md::chunk-10",
           "news/article_02.md::chunk-9",
-          "news/article_03.md::chunk-8",
           "news/article_02.md::chunk-8",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-187"
+          "news/article_03.md::chunk-7",
+          "news/article_02.md::chunk-7",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-186"
         ],
-        "latency_seconds": 0.069,
+        "latency_seconds": 0.044,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.6923,
@@ -556,15 +550,15 @@
       {
         "question": "Thời gian đăng ký học phần kỳ 2025.2 là khi nào?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “Đăng ký học phần: từ 14h00 ngày 10/10/2025 đến 16h ngày 23/10/2025” [news/article_02.md::chunk-12]",
+        "answer": "Trích từ tài liệu: “Đăng ký học phần: từ 14h00 ngày 10/10/2025 đến 16h ngày 23/10/2025” [news/article_02.md::chunk-11]",
         "source_ids": [
+          "news/article_02.md::chunk-7",
           "news/article_02.md::chunk-8",
-          "news/article_02.md::chunk-9",
-          "news/article_02.md::chunk-12",
-          "news/article_03.md::chunk-8",
-          "news/article_03.md::chunk-18"
+          "news/article_02.md::chunk-11",
+          "news/article_03.md::chunk-7",
+          "news/article_03.md::chunk-17"
         ],
-        "latency_seconds": 0.068,
+        "latency_seconds": 0.045,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -575,18 +569,18 @@
       {
         "question": "Kỳ 2025.2 được đăng ký tối đa bao nhiêu tín chỉ ở hệ chuẩn và Elitech?",
         "expected_source": "article_02.md",
-        "answer": "Trích từ tài liệu: “_+ Khối lượng đăng ký tối đa 24TC (Elitech: 28TC), tối thiểu 12TC_” [news/article_02.md::chunk-12]",
+        "answer": "Trích từ tài liệu: “_+ Khối lượng đăng ký tối đa 24TC (Elitech: 28TC), tối thiểu 12TC_” [news/article_02.md::chunk-11]",
         "source_ids": [
-          "news/article_02.md::chunk-12",
-          "news/article_03.md::chunk-14",
-          "news/article_03.md::chunk-16",
-          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-27",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-125"
+          "news/article_02.md::chunk-11",
+          "news/article_03.md::chunk-13",
+          "news/article_03.md::chunk-15",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-26",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-124"
         ],
-        "latency_seconds": 0.076,
+        "latency_seconds": 0.047,
         "scores": {
           "faithfulness": 1.0,
-          "answer_relevance": 0.3333,
+          "answer_relevance": 0.6667,
           "context_recall": 1.0,
           "context_precision": 0.2
         }
@@ -594,15 +588,15 @@
       {
         "question": "Học kỳ I năm 2025-2026 có bao nhiêu sinh viên Bách khoa Hà Nội được học bổng khuyến khích học tập?",
         "expected_source": "article_01.md",
-        "answer": "Trích từ tài liệu: “Nhà trường trân trọng thông báo và chúc mừng **1.****309****sinh viên** có kết quả học tập và rèn luyện xuất sắc được học bổng khuyến khích học tập học kỳ I năm học 2025-2026.” [news/article_01.md::chunk-8]",
+        "answer": "Trích từ tài liệu: “Nhà trường trân trọng thông báo và chúc mừng **1.****309****sinh viên** có kết quả học tập và rèn luyện xuất sắc được học bổng khuyến khích học tập học kỳ I năm học 2025-2026.” [news/article_01.md::chunk-7]",
         "source_ids": [
-          "news/article_01.md::chunk-8",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-3",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-5",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-9",
-          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-0"
+          "news/article_01.md::chunk-7",
+          "legal/hust-quyet-dinh-hoc-phi-2025-2026.md::chunk-0",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-2",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-4",
+          "legal/quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md::chunk-8"
         ],
-        "latency_seconds": 0.067,
+        "latency_seconds": 0.045,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -613,15 +607,15 @@
       {
         "question": "Sinh viên chính quy dùng thẻ gì để sử dụng thư viện Bách khoa Hà Nội?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “* Đối với sinh viên chính qui : Thẻ sinh viên được sử dụng là thẻ Trung tâm TTTTS” [news/article_05.md::chunk-7]",
+        "answer": "Trích từ tài liệu: “* Đối với sinh viên chính qui : Thẻ sinh viên được sử dụng là thẻ Trung tâm TTTTS” [news/article_05.md::chunk-6]",
         "source_ids": [
-          "news/article_05.md::chunk-8",
           "news/article_05.md::chunk-7",
-          "news/article_05.md::chunk-35",
-          "news/article_04.md::chunk-21",
-          "news/article_04.md::chunk-29"
+          "news/article_05.md::chunk-6",
+          "news/article_05.md::chunk-34",
+          "news/article_04.md::chunk-20",
+          "news/article_04.md::chunk-28"
         ],
-        "latency_seconds": 0.077,
+        "latency_seconds": 0.054,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,
@@ -632,15 +626,15 @@
       {
         "question": "Nếu mất thẻ thư viện Bách khoa Hà Nội, sinh viên cần làm gì?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “_**Trả lời**_ : Bạn cần báo ngay cho Trung tâm TTTTS, phòng Công tác sinh viên và phòng Bảo vệ khi phát hiện mình bị mất thẻ đồng thời đăng ký làm thẻ lại theo số thẻ cũ của bạn. Trong thời gian chờ thẻ mới, bạn có thể sử dụng giấy xác nhận sinh viên hoặc đăng ký làm Thẻ bạn đọc để sử dụng Trung tâm TTTTS.” [news/article_05.md::chunk-9]",
+        "answer": "Trích từ tài liệu: “_**Trả lời**_ : Bạn cần báo ngay cho Trung tâm TTTTS, phòng Công tác sinh viên và phòng Bảo vệ khi phát hiện mình bị mất thẻ đồng thời đăng ký làm thẻ lại theo số thẻ cũ của bạn. Trong thời gian chờ thẻ mới, bạn có thể sử dụng giấy xác nhận sinh viên hoặc đăng ký làm Thẻ bạn đọc để sử dụng Trung tâm TTTTS.” [news/article_05.md::chunk-8]",
         "source_ids": [
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-175",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-174",
+          "news/article_05.md::chunk-7",
           "news/article_05.md::chunk-8",
-          "news/article_05.md::chunk-9",
-          "news/article_04.md::chunk-80",
-          "news/article_03.md::chunk-33"
+          "news/article_04.md::chunk-79",
+          "news/article_03.md::chunk-32"
         ],
-        "latency_seconds": 0.072,
+        "latency_seconds": 0.05,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 0.9231,
@@ -651,15 +645,15 @@
       {
         "question": "Phòng nào của thư viện Bách khoa Hà Nội cho mượn sách giáo trình?",
         "expected_source": "article_05.md",
-        "answer": "Trích từ tài liệu: “- Phòng 111: Phòng mượn sách giáo trình, cho mượn các tài liệu là sách giáo trình.” [news/article_05.md::chunk-15]",
+        "answer": "Trích từ tài liệu: “- Phòng 111: Phòng mượn sách giáo trình, cho mượn các tài liệu là sách giáo trình.” [news/article_05.md::chunk-14]",
         "source_ids": [
-          "news/article_05.md::chunk-15",
-          "news/article_05.md::chunk-35",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-5",
           "news/article_05.md::chunk-14",
-          "legal/hust-quy-che-dao-tao-2025.md::chunk-175"
+          "news/article_05.md::chunk-34",
+          "news/article_05.md::chunk-13",
+          "legal/hust-quy-che-dao-tao-2025.md::chunk-4",
+          "news/article_04.md::chunk-79"
         ],
-        "latency_seconds": 0.08,
+        "latency_seconds": 0.057,
         "scores": {
           "faithfulness": 1.0,
           "answer_relevance": 1.0,

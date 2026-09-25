@@ -18,6 +18,8 @@ def rerank_rrf(
     """Fuse nhiều ranked lists và trả hybrid SearchResult."""
     if top_k <= 0:
         return []
+    if k < 0:
+        raise ValueError("RRF k must be non-negative")
 
     scores: dict[str, float] = {}
     items: dict[str, dict] = {}

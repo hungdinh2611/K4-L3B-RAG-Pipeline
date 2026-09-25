@@ -189,6 +189,8 @@ def embed_chunks(chunks: list[dict], batch_size: int = 64) -> list[dict]:
     """Thêm embedding vào từng chunk."""
     if not chunks:
         return []
+    if batch_size <= 0:
+        raise ValueError("batch_size must be positive")
 
     contents = [chunk["content"] for chunk in chunks]
     all_embeddings: list[list[float]] = []
@@ -196,6 +198,9 @@ def embed_chunks(chunks: list[dict], batch_size: int = 64) -> list[dict]:
     for i in range(0, len(contents), batch_size):
         batch = contents[i : i + batch_size]
         all_embeddings.extend(embed_texts(batch))
+
+    if len(all_embeddings) != len(chunks):
+        raise ValueError("embedding provider returned an unexpected vector count")
 
     embedded_chunks: list[dict] = []
     for chunk, vector in zip(chunks, all_embeddings):
@@ -218,15 +223,30 @@ def _sanitize_metadata_for_chroma(metadata: dict) -> dict:
 
 
 def index_to_vectorstore(chunks: list[dict], batch_size: int = 200) -> None:
-    """Upsert chunks vào ChromaDB với ID ổn định để tránh duplicate."""
+    """Đồng bộ một snapshot chunks vào ChromaDB bằng ID ổn định."""
     if not chunks:
         return
+    if batch_size <= 0:
+        raise ValueError("batch_size must be positive")
+
+    chunk_ids = [chunk["id"] for chunk in chunks]
+    if len(chunk_ids) != len(set(chunk_ids)):
+        raise ValueError("chunk IDs must be unique")
+    for chunk in chunks:
+        validate_document(chunk, require_chunk=True)
 
     collection = get_collection()
 
     # Đảm bảo các chunk đều có embedding
-    if "embedding" not in chunks[0]:
+    if any("embedding" not in chunk for chunk in chunks):
         chunks = embed_chunks(chunks)
+
+    # Upsert không tự xóa ID từ snapshot cũ. Xóa chúng trước để một lần index
+    # luôn phản ánh đúng corpus hiện tại, kể cả khi quy tắc chunking thay đổi.
+    existing = collection.get(include=[])
+    stale_ids = sorted(set(existing.get("ids") or []) - set(chunk_ids))
+    if stale_ids:
+        collection.delete(ids=stale_ids)
 
     for i in range(0, len(chunks), batch_size):
         batch = chunks[i : i + batch_size]

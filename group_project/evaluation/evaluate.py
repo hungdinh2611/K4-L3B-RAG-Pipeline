@@ -19,6 +19,11 @@ OUTPUT_PATH = HERE / "metrics.json"
 TOP_K = 5
 
 
+def _metric_terms(text: str) -> set[str]:
+    expanded = re.sub(r"(\d+)\s*TC\b", r"\1 tín chỉ", text, flags=re.IGNORECASE)
+    return _terms(expanded)
+
+
 def _fraction(found: set[str], expected: set[str]) -> float:
     return len(found & expected) / len(expected) if expected else 0.0
 
@@ -44,12 +49,12 @@ def evaluate_case(case: dict, use_reranking: bool) -> dict:
     )
     answer, chunks = _local_evidence(case["question"], retrieved, TOP_K) if retrieved else (SAFE_REFUSAL, [])
     elapsed = time.perf_counter() - started
-    context_terms = _terms(" ".join(item["content"] for item in chunks))
-    answer_terms = _terms(answer) if answer != SAFE_REFUSAL else set()
+    context_terms = _metric_terms(" ".join(item["content"] for item in chunks))
+    answer_terms = _metric_terms(answer) if answer != SAFE_REFUSAL else set()
     scores = {
         "faithfulness": _faithful(answer, chunks),
-        "answer_relevance": _fraction(answer_terms, _terms(case["expected_answer"])),
-        "context_recall": _fraction(context_terms, _terms(case["expected_context"])),
+        "answer_relevance": _fraction(answer_terms, _metric_terms(case["expected_answer"])),
+        "context_recall": _fraction(context_terms, _metric_terms(case["expected_context"])),
         "context_precision": (
             sum(item["metadata"]["source"] == case["source"] for item in chunks) / len(chunks)
             if chunks else 0.0

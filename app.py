@@ -39,6 +39,9 @@ with st.sidebar:
     st.caption("Quy định đào tạo, học phí, học bổng và thông báo liên quan.")
     top_k = st.slider("Số chunks", 3, 10, 5)
     st.info("Câu trả lời luôn kèm ID nguồn để bạn kiểm tra lại tài liệu.")
+    if st.button("Xóa lịch sử hội thoại", use_container_width=True):
+        st.session_state.messages = []
+        st.rerun()
 
 st.title("Hỏi đáp tài liệu đại học")
 st.caption("Hỏi bằng tiếng Việt về các tài liệu đã được lập chỉ mục.")
@@ -47,6 +50,8 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
         if message["role"] == "assistant":
+            if message.get("retrieval_source"):
+                st.caption(f"Nguồn truy xuất: `{message['retrieval_source']}`")
             render_sources(message.get("sources", []))
 
 query = st.chat_input("Nhập câu hỏi...")
@@ -63,8 +68,14 @@ if query:
         answer = result["answer"]
         sources = result["sources"]
         st.markdown(answer)
+        st.caption(f"Nguồn truy xuất: `{result['retrieval_source']}`")
         render_sources(sources)
 
     st.session_state.messages.append(
-        {"role": "assistant", "content": answer, "sources": sources}
+        {
+            "role": "assistant",
+            "content": answer,
+            "sources": sources,
+            "retrieval_source": result["retrieval_source"],
+        }
     )
