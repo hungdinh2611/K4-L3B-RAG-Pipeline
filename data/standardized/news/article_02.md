@@ -2,7 +2,7 @@
 
 **Source:** https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=45580
 
-**Crawled:** 2026-09-25T10:17:23.402785
+**Crawled:** 2026-09-25T10:22:00.039821
 
 ---
 

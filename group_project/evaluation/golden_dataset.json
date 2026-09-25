@@ -1,0 +1,104 @@
+[
+  {
+    "question": "Học phí năm học 2025-2026 được tính theo gì?",
+    "expected_answer": "Học phí được tính theo số tín chỉ học phí của các học phần đăng ký mỗi học kỳ.",
+    "expected_context": "Học phí được tính theo số tín chỉ học phí (TCHP)",
+    "source": "hust-quyet-dinh-hoc-phi-2025-2026.md"
+  },
+  {
+    "question": "Học phí học kỳ hè được tính bằng bao nhiêu lần mức thông thường?",
+    "expected_answer": "Học phí học kỳ hè bằng 1,5 lần mức quy định, trừ một số học phần do Giám đốc đại học quyết định.",
+    "expected_context": "Mức học phí học kỳ hè được tính bằng 1,5 lần",
+    "source": "hust-quyet-dinh-hoc-phi-2025-2026.md"
+  },
+  {
+    "question": "Chương trình TROY-BA và TROY-IT khóa 70 có học phí bao nhiêu mỗi học kỳ?",
+    "expected_answer": "Khóa 70 có học phí 30 triệu đồng mỗi học kỳ.",
+    "expected_context": "30 triệu đồng/một học kỳ với",
+    "source": "hust-quyet-dinh-hoc-phi-2025-2026.md"
+  },
+  {
+    "question": "Quỹ học bổng khuyến khích học tập của Trường Đại học Luật TP.HCM được trích bao nhiêu phần trăm học phí?",
+    "expected_answer": "Quỹ học bổng được trích bằng 8% nguồn thu học phí.",
+    "expected_context": "Quỹ học bổng khuyến khích học tập được trích lập bằng 8%",
+    "source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md"
+  },
+  {
+    "question": "Học bổng loại xuất sắc của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
+    "expected_answer": "Học bổng loại xuất sắc bằng 150% học phí chương trình đào tạo.",
+    "expected_context": "Mức học bổng loại xuất sắc: bằng 150% học phí",
+    "source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md"
+  },
+  {
+    "question": "Học bổng loại giỏi của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
+    "expected_answer": "Học bổng loại giỏi bằng 100% học phí chương trình đào tạo.",
+    "expected_context": "Mức học bổng loại giỏi: bằng 100% học phí",
+    "source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md"
+  },
+  {
+    "question": "Học bổng loại khá của Trường Đại học Luật TP.HCM bằng bao nhiêu phần trăm học phí?",
+    "expected_answer": "Học bổng loại khá bằng 50% học phí chương trình đào tạo.",
+    "expected_context": "Mức học bổng loại khá: bằng 50% học phí",
+    "source": "quy-dinh-hoc-bong-khuyen-khich-hoc-tap.md"
+  },
+  {
+    "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 8 tín chỉ trong học kỳ bị cảnh báo thế nào?",
+    "expected_answer": "Sinh viên bị nâng một mức cảnh báo học tập.",
+    "expected_context": "Nâng một mức cảnh báo học tập đối với sinh viên có số TC không đạt",
+    "source": "hust-quy-che-dao-tao-2025.md"
+  },
+  {
+    "question": "Sinh viên Bách khoa Hà Nội không đạt hơn 16 tín chỉ trong học kỳ bị cảnh báo thế nào?",
+    "expected_answer": "Sinh viên bị nâng hai mức cảnh báo học tập.",
+    "expected_context": "Nâng hai mức cảnh báo học tập đối với sinh viên có số TC không đạt",
+    "source": "hust-quy-che-dao-tao-2025.md"
+  },
+  {
+    "question": "Học kỳ hè có xét cảnh báo học tập ở Bách khoa Hà Nội không?",
+    "expected_answer": "Không xét cảnh báo học tập với học kỳ hè.",
+    "expected_context": "Không xét cảnh báo học tập với học kỳ hè.",
+    "source": "hust-quy-che-dao-tao-2025.md"
+  },
+  {
+    "question": "Sinh viên K70 có cần đăng ký học phần học kỳ 2 năm 2025-2026 không?",
+    "expected_answer": "K70 không cần đăng ký học phần; nhà trường sẽ mở theo chương trình đào tạo.",
+    "expected_context": "Riêng K70 không cần đăng ký học phần",
+    "source": "article_02.md"
+  },
+  {
+    "question": "Thời gian đăng ký học phần kỳ 2025.2 là khi nào?",
+    "expected_answer": "Từ 14h00 ngày 10/10/2025 đến 16h ngày 23/10/2025.",
+    "expected_context": "từ 14h00 ngày 10/10/2025 đến 16h ngày 23/10/2025",
+    "source": "article_02.md"
+  },
+  {
+    "question": "Kỳ 2025.2 được đăng ký tối đa bao nhiêu tín chỉ ở hệ chuẩn và Elitech?",
+    "expected_answer": "Tối đa 24 tín chỉ ở hệ chuẩn và 28 tín chỉ ở Elitech; tối thiểu 12 tín chỉ.",
+    "expected_context": "Khối lượng đăng ký tối đa 24TC (Elitech: 28TC), tối thiểu 12TC",
+    "source": "article_02.md"
+  },
+  {
+    "question": "Học kỳ I năm 2025-2026 có bao nhiêu sinh viên Bách khoa Hà Nội được học bổng khuyến khích học tập?",
+    "expected_answer": "Có 1.309 sinh viên được học bổng khuyến khích học tập.",
+    "expected_context": "309****sinh viên** có kết quả học tập và rèn luyện xuất sắc được học bổng",
+    "source": "article_01.md"
+  },
+  {
+    "question": "Sinh viên chính quy dùng thẻ gì để sử dụng thư viện Bách khoa Hà Nội?",
+    "expected_answer": "Sinh viên chính quy dùng thẻ sinh viên làm thẻ Trung tâm TTTTS.",
+    "expected_context": "Thẻ sinh viên được sử dụng là thẻ Trung tâm TTTTS",
+    "source": "article_05.md"
+  },
+  {
+    "question": "Nếu mất thẻ thư viện Bách khoa Hà Nội, sinh viên cần làm gì?",
+    "expected_answer": "Báo ngay Trung tâm TTTTS, phòng Công tác sinh viên và phòng Bảo vệ, rồi đăng ký làm lại thẻ.",
+    "expected_context": "Bạn cần báo ngay cho Trung tâm TTTTS, phòng Công tác sinh viên và phòng Bảo vệ",
+    "source": "article_05.md"
+  },
+  {
+    "question": "Phòng nào của thư viện Bách khoa Hà Nội cho mượn sách giáo trình?",
+    "expected_answer": "Phòng 111 là phòng mượn sách giáo trình.",
+    "expected_context": "Phòng 111: Phòng mượn sách giáo trình",
+    "source": "article_05.md"
+  }
+]

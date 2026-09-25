@@ -2,7 +2,7 @@
 
 **Source:** https://ts.hust.edu.vn/tin-tuc/nhung-dieu-tan-sinh-vien-k66-can-biet
 
-**Crawled:** 2026-09-25T10:17:27.791348
+**Crawled:** 2026-09-25T10:22:08.877413
 
 ---
 
@@ -69,7 +69,7 @@
 
 ### Tin Xem Nhiều
   * [ ![Giới thiệu về Kỳ thi Đánh giá tư duy - TSA](https://ts.hust.edu.vn/storage/app/public/posts/December2023/kAtuww4kqGK7O2c2m0Re.png)](https://ts.hust.edu.vn/tin-tuc/gioi-thieu-ve-ky-thi-danh-gia-tu-duy-tsa)
-####  [Giới thiệu về Kỳ thi Đánh giá tư duy - TSA](https://ts.hust.edu.vn/tin-tuc/gioi-thieu-ve-ky-thi-danh-gia-tu-duy-tsa) 656349
+####  [Giới thiệu về Kỳ thi Đánh giá tư duy - TSA](https://ts.hust.edu.vn/tin-tuc/gioi-thieu-ve-ky-thi-danh-gia-tu-duy-tsa) 656350
   * [ ![Điểm chuẩn Đại học Bách khoa Hà Nội 2024: Điểm thi ĐGTD cao nhất 83.82; điểm thi tốt nghiệp THPT cao nhất 28.53](https://ts.hust.edu.vn/storage/app/public/posts/August2024/m2A1sxBu3sR8ewx7fxXM.jpg)](https://ts.hust.edu.vn/tin-tuc/diem-chuan-dai-hoc-bach-khoa-ha-noi-2024-diem-thi-dgtd-cao-nhat-83-82-diem-thi-tot-nghiep-thpt-cao-nhat-28-53)
 ####  [Điểm chuẩn Đại học Bách khoa Hà Nội 2024: Điểm thi ĐGTD cao nhất 83.82; điểm thi tốt nghiệp THPT cao nhất 28.53](https://ts.hust.edu.vn/tin-tuc/diem-chuan-dai-hoc-bach-khoa-ha-noi-2024-diem-thi-dgtd-cao-nhat-83-82-diem-thi-tot-nghiep-thpt-cao-nhat-28-53) 543569
   * [ ![Thông tin Tuyển sinh Đại học chính quy năm 2026](https://ts.hust.edu.vn/storage/app/public/posts/February2026/mQfH6KgfwSz3wwYAU0Ui.jpg)](https://ts.hust.edu.vn/tin-tuc/thong-tin-tuyen-sinh-dai-hoc-chinh-quy-nam-2026)
@@ -77,7 +77,7 @@
   * [ ![Điểm chuẩn trúng tuyển đại học hệ chính quy năm 2023](https://ts.hust.edu.vn/storage/app/public/posts/September2023/rd57A2g6c1G3CWXYen4y.jpg)](https://ts.hust.edu.vn/tin-tuc/diem-chuan-trung-tuyen-dai-hoc-he-chinh-quy-nam-2023)
 ####  [Điểm chuẩn trúng tuyển đại học hệ chính quy năm 2023](https://ts.hust.edu.vn/tin-tuc/diem-chuan-trung-tuyen-dai-hoc-he-chinh-quy-nam-2023) 286034
   * [ ![	Bản đồ trường Đại học Bách Khoa Hà Nội](https://ts.hust.edu.vn/storage/app/public/posts/September2023/xteLVrC3X1dqVpGiFocZ.jpg)](https://ts.hust.edu.vn/tin-tuc/ban-do-truong-dai-hoc-bach-khoa-ha-noi)
-####  [ Bản đồ trường Đại học Bách Khoa Hà Nội](https://ts.hust.edu.vn/tin-tuc/ban-do-truong-dai-hoc-bach-khoa-ha-noi) 279301
+####  [ Bản đồ trường Đại học Bách Khoa Hà Nội](https://ts.hust.edu.vn/tin-tuc/ban-do-truong-dai-hoc-bach-khoa-ha-noi) 279303
 
 
 # Những điều Tân sinh viên K66 cần biết
@@ -277,40 +277,40 @@ Email: ctsv@hust.edu.vn
 
 
 ### Có thể bạn sẽ thích
-[![Đợt 1 TSA 2025: Xuất hiện thủ khoa của... thủ khoa!](https://ts.hust.edu.vn/storage/app/public/posts/February2025/mXhB4XMPxL2J4wi0jWhi.jpg)](https://ts.hust.edu.vn/tin-tuc/dot-1-tsa-2025-xuat-hien-thu-khoa-cua-thu-khoa)
-### [Đợt 1 TSA 2025: Xuất hiện thủ khoa của... thủ khoa!](https://ts.hust.edu.vn/tin-tuc/dot-1-tsa-2025-xuat-hien-thu-khoa-cua-thu-khoa)
+[![Lĩnh vực Kỹ thuật và Công nghệ Bách khoa Hà Nội vào top 400 thế giới](https://ts.hust.edu.vn/storage/app/public/posts/August2023/PYcPdZJF0dWRENG7jpfq.jpg)](https://ts.hust.edu.vn/tin-tuc/l-nh-vuc-ky-thuat-va-cong-nghe-bach-khoa-ha-noi-vao-top-400-the-gioi)
+### [Lĩnh vực Kỹ thuật và Công nghệ Bách khoa Hà Nội vào top 400 thế giới](https://ts.hust.edu.vn/tin-tuc/l-nh-vuc-ky-thuat-va-cong-nghe-bach-khoa-ha-noi-vao-top-400-the-gioi)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 04-02-2025 ![icons](https://ts.hust.edu.vn/public/images/eye.png)20766 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 07-11-2019 ![icons](https://ts.hust.edu.vn/public/images/eye.png)24604 
 
 
-[![Hướng dẫn xác nhận nhập học đối với thí sinh trúng tuyển Đại học năm 2022](https://ts.hust.edu.vn/storage/app/public/posts/September2023/d7dvL5d0CUrgfQnnSno9.png)](https://ts.hust.edu.vn/tin-tuc/huong-dan-xac-nhan-nhap-hoc-doi-voi-thi-sinh-trung-tuyen-dai-hoc-nam-2022)
-### [Hướng dẫn xác nhận nhập học đối với thí sinh trúng tuyển Đại học năm 2022](https://ts.hust.edu.vn/tin-tuc/huong-dan-xac-nhan-nhap-hoc-doi-voi-thi-sinh-trung-tuyen-dai-hoc-nam-2022)
+[![Đại học Bách khoa Hà Nội tư vấn tuyển sinh, hướng nghiệp cho học sinh trường THPT Cao Bá Quát](https://ts.hust.edu.vn/storage/app/public/posts/January2024/BDLZ0TpEJCFVSvJXHEWl.jpg)](https://ts.hust.edu.vn/tin-tuc/dai-hoc-bach-khoa-ha-noi-tu-van-tuyen-sinh-huong-nghiep-cho-hoc-sinh-truong-thpt-cao-ba-quat)
+### [Đại học Bách khoa Hà Nội tư vấn tuyển sinh, hướng nghiệp cho học sinh trường THPT Cao Bá Quát](https://ts.hust.edu.vn/tin-tuc/dai-hoc-bach-khoa-ha-noi-tu-van-tuyen-sinh-huong-nghiep-cho-hoc-sinh-truong-thpt-cao-ba-quat)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 16-09-2022 ![icons](https://ts.hust.edu.vn/public/images/eye.png)17972 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 09-01-2024 ![icons](https://ts.hust.edu.vn/public/images/eye.png)15384 
 
 
-[![Tổng hợp Hỏi Đáp về thông tin tuyển sinh vào ĐH Bách Khoa Hà Nội năm 2021](https://ts.hust.edu.vn/storage/app/public/posts/September2023/FMWHUMepixD7K8uCFpiq.png)](https://ts.hust.edu.vn/tin-tuc/tong-hop-hoi-dap-ve-thong-tin-tuyen-sinh-vao-dh-bach-khoa-ha-noi-nam-2021)
-### [Tổng hợp Hỏi Đáp về thông tin tuyển sinh vào ĐH Bách Khoa Hà Nội năm 2021](https://ts.hust.edu.vn/tin-tuc/tong-hop-hoi-dap-ve-thong-tin-tuyen-sinh-vao-dh-bach-khoa-ha-noi-nam-2021)
+[![Thông báo tuyển sinh trình độ Kỹ sư chuyên sâu năm 2026](https://ts.hust.edu.vn/storage/app/public/posts/January2026/LlTVGzZqKkBrm3Mkhmel.jpg)](https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-ky-su-chuyen-sau-nam-2026)
+### [Thông báo tuyển sinh trình độ Kỹ sư chuyên sâu năm 2026](https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-ky-su-chuyen-sau-nam-2026)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 21-09-2021 ![icons](https://ts.hust.edu.vn/public/images/eye.png)21672 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 21-01-2026 ![icons](https://ts.hust.edu.vn/public/images/eye.png)12604 
 
 
-[![Những điều tân sinh viên K64 cần biết](https://ts.hust.edu.vn/storage/app/public/posts/September2023/39vuiCLY0VQKmK7KcwDc.jfif)](https://ts.hust.edu.vn/tin-tuc/nhung-dieu-tan-sinh-vien-k64-can-biet)
-### [Những điều tân sinh viên K64 cần biết](https://ts.hust.edu.vn/tin-tuc/nhung-dieu-tan-sinh-vien-k64-can-biet)
+[![Ngưỡng điểm sàn đăng ký xét tuyển và Cách tính điểm xét tuyển 2018](https://ts.hust.edu.vn/storage/app/public/posts/September2023/BWM3z72gmwgONxYhHSLM.jfif)](https://ts.hust.edu.vn/tin-tuc/nguong-diem-san-dang-ky-xet-tuyen-va-cach-tinh-diem-xet-tuyen-2018)
+### [Ngưỡng điểm sàn đăng ký xét tuyển và Cách tính điểm xét tuyển 2018](https://ts.hust.edu.vn/tin-tuc/nguong-diem-san-dang-ky-xet-tuyen-va-cach-tinh-diem-xet-tuyen-2018)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 23-09-2019 ![icons](https://ts.hust.edu.vn/public/images/eye.png)14689 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 02-10-2018 ![icons](https://ts.hust.edu.vn/public/images/eye.png)6939 
 
 
-[![Ngưỡng yêu cầu đối với phương thức Xét tuyển tài năng năm 2023](https://ts.hust.edu.vn/storage/app/public/posts/September2023/MchkEifd2q5f3wzneQQ9.jpg)](https://ts.hust.edu.vn/tin-tuc/nguong-yeu-cau-doi-voi-phuong-thuc-xet-tuyen-tai-nang-nam-2023)
-### [Ngưỡng yêu cầu đối với phương thức Xét tuyển tài năng năm 2023](https://ts.hust.edu.vn/tin-tuc/nguong-yeu-cau-doi-voi-phuong-thuc-xet-tuyen-tai-nang-nam-2023)
+[![Hướng dẫn đăng ký xác thực chứng chỉ Ngoại ngữ 2025](https://ts.hust.edu.vn/storage/app/public/posts/May2025/VpNyJjdZ6oH47cLySGLO.jpg)](https://ts.hust.edu.vn/tin-tuc/huong-dan-dang-ky-xac-thuc-chung-chi-ngoai-ngu-2025)
+### [Hướng dẫn đăng ký xác thực chứng chỉ Ngoại ngữ 2025](https://ts.hust.edu.vn/tin-tuc/huong-dan-dang-ky-xac-thuc-chung-chi-ngoai-ngu-2025)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 14-06-2023 ![icons](https://ts.hust.edu.vn/public/images/eye.png)26077 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 15-05-2025 ![icons](https://ts.hust.edu.vn/public/images/eye.png)115218 
 
 
-[![Hướng dẫn khai báo thông tin nhập học trực tuyến K65](https://ts.hust.edu.vn/storage/app/public/posts/September2023/YuiiCv8bGYfzTyjN7oyD.jpg)](https://ts.hust.edu.vn/tin-tuc/huong-dan-khai-bao-thong-tin-nhap-hoc-truc-tuyen-k65)
-### [Hướng dẫn khai báo thông tin nhập học trực tuyến K65](https://ts.hust.edu.vn/tin-tuc/huong-dan-khai-bao-thong-tin-nhap-hoc-truc-tuyen-k65)
+[![Hướng dẫn đăng ký tuyển sinh - Khai báo thông tin cá nhân](https://ts.hust.edu.vn/storage/app/public/posts/September2023/yy6dqpe7ZIY6xwGb4fLd.jfif)](https://ts.hust.edu.vn/tin-tuc/huong-dan-dang-ky-tuyen-sinh-khai-bao-thong-tin-ca-nhan)
+### [Hướng dẫn đăng ký tuyển sinh - Khai báo thông tin cá nhân](https://ts.hust.edu.vn/tin-tuc/huong-dan-dang-ky-tuyen-sinh-khai-bao-thong-tin-ca-nhan)
   * ![icons](https://ts.hust.edu.vn/public/images/author.png)Lê Giang
-  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 23-09-2020 ![icons](https://ts.hust.edu.vn/public/images/eye.png)44931 
+  * ![icon](https://ts.hust.edu.vn/public/images/calendar.png) 23-09-2020 ![icons](https://ts.hust.edu.vn/public/images/eye.png)59192 
 
 
 ![Thông tin tuyển sinh Đại học Bách khoa Hà Nội](https://ts.hust.edu.vn/storage/app/public/settings/August2023/jx7Xe6QCwsP6bWJgW0tA.png)
